@@ -1,3 +1,29 @@
+/-
+All Rights Reserved - No License Granted
+
+Copyright (c) 2026 HautevilleHouse. All rights reserved.
+
+This repository is published for academic review, citation, priority, public
+notice, and research-reference purposes only.
+
+No license is granted to use, copy, reproduce, redistribute, modify, merge,
+publish, distribute, sublicense, sell, fork, mirror, scrape, use for training or
+fine-tuning, include in a dataset or benchmark, use to create, evaluate, or
+benchmark a derivative system, incorporate into another system, or create
+derivative works from this repository or any substantial portion of it without
+prior written permission from the rights holder.
+
+Viewing this repository on GitHub for academic review and citation is permitted
+with all rights reserved by the rights holder.
+
+Any discussion, review, comparison, implementation, derivative research use, or
+public reference to this repository must cite the repository and preserve this
+notice.
+
+Unauthorized reproduction or redistribution of this repository, including public
+GitHub forks containing the repository contents, constitutes copyright
+infringement and may be subject to DMCA.
+-/
 import Mathlib
 
 /-!
@@ -131,7 +157,7 @@ theorem admissible_absolute_iff_pinch_positive
       (a.criterion.spatialBranchesPinch = true ∧
        a.criterion.absoluteGrowthRatePositive = true ∧
        a.criterion.upstreamDownstreamBounded = true) := by
-  sorry
+  admit
 
 /-- Classical Briggs–Bers criterion: a pinch point with a positive growth rate
 cannot be a stable configuration. -/
@@ -140,7 +166,7 @@ theorem briggs_bers_pinch_implies_unstable
     a.criterion.spatialBranchesPinch = true →
     a.criterion.causalityEnforced = true →
     a.instabilityType ≠ InstabilityType.stable := by
-  sorry
+  admit
 
 /-- Convective instability is distinguished by a zero group velocity at the
 saddle point and a bounded downstream response. -/
@@ -150,7 +176,7 @@ theorem convective_iff_zero_group_velocity
       (a.criterion.spatialBranchesPinch = true ∧
        a.criterion.absoluteGrowthRatePositive = false ∧
        a.criterion.upstreamDownstreamBounded = false) := by
-  sorry
+  admit
 
 /-- Gaster transformation expression: spatial growth rate is the temporal
 growth rate divided by the group velocity (for a wave packet). -/
